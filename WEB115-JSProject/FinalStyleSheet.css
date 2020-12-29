@@ -1,0 +1,17 @@
+body {background-color : lightblue}
+
+div {background-image : linear-gradient(to left,  rgb(77, 60, 231),  rgb(238, 177, 64))}
+
+h1 {font-size : 24px}
+
+h2 {font-size : 18px}
+
+h3 {text-align : center; font-size : 36px; color : black}
+
+p {font-weight: bold}
+
+table {margin-left : auto; margin-right : auto}
+
+th {font-size : 18px}
+
+td {font-size: 16px; font-weight : bold; padding: 12px}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Tristan Anderson
+    Date: October 27th, 2020
+    Filename: stopwatch.html
+    Purpose: Utilize timer methods to display a functioning stopwatch
+-->
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tristan Anderson - Chapter07 - Lesson 9 Date</title>
+    </head>
+
+    <body>
+        <p>StopWatch</p>
+        
+        <input type="button" id="startTimer" value="Start Timer" onClick="runTimer()"/><br/>
+        <input type="button" id="stopTimer" value="Stop Timer" onClick="stopTimer()"/><br/>
+        <input type="button" id="resetTimer" value="Reset Timer" onClick="restartTimer()"/><br/>
+        
+        <p>Min:Sec</p>
+        <p id="timerDisplay"></p>
+
+        <script src="operateStopwatch.js"></script>
+    </body>
+</html>

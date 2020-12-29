@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Tristan Anderson
+    Date: December 1st, 2020
+    Filename: finalProject.html
+    Purpose: Create a personal resume building tool utilizing the skills
+            acquired during the WEB115 course
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="FinalStyleSheet.css">
+        <title>WEB-115 Final Project</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Tristan Anderson</h1>
+            <h2>WEB-115.0001</h2>
+            <h3>Build Your Resume</h3>
+        </div>
+        <form action="" id="resumeForm" name="resumeForm">
+            <table>
+                <tr>
+                    <th>Personal Information</th>
+                    <th>Personal Skill Sets</th>
+                    <th>Work History</th>
+                    <th>Business References</th>
+                </tr>
+                <tr>
+                    <td>
+                        Current City:<br>
+                        <input type="text" id="userCity" name="userCity"/><br>
+                        Current State:<br>
+                        <input type="text" id="userState" name="userState"/><br>
+                        Zip Code:<br>
+                        <input type="text" id="userZip" name="userZip"/>
+                        
+                    </td>
+                    <td>
+                        Volunteer Work:<br>
+                        <textarea rows="5" cols="20" id="userVolunteer" name="userVolunteer"></textarea>
+                    </td>
+                    <td>
+                        Enter Job 1 Details:<br>
+                        <textarea rows="5" cols="20" id="job1Desc" name="job1Desc"></textarea>
+                    </td>
+                    <td>
+                        Previous Employer Info:<br>
+                        (';' separated)<br>
+                        <textarea rows="5" cols="20" id="userRef" name="userRef"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Full Name:<br>
+                        <input type="text" id="userName" name="userName"/><br>
+                        Phone Number:<br>
+                        <input type="text" id="userPhone" name="userPhone"/>
+
+                    </td>
+                    <td>
+                        Work Ethic:<br>
+                        <input type="text" id="userEthic" name="userEthic">
+                    </td>
+                    <td>
+                        Start:<br>
+                        <input type="date" id="startDate1" name="startDate1"/><br>
+                        End:<br>
+                        <input type="date" id="endDate1" name="endDate1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Must Undergo Validation-->
+                        E-mail Address:<br>
+                        <input type="text" id="userMail"/><br>
+                        <button type="button" onclick="checkEmail()">Check Address</button>
+                    </td>
+                    <td>
+                        Public Speaking:<br>
+                        <select id="userSpeak" name="userSpeak">
+                            <option value="strong">strong</option>
+                            <option value="moderate">moderate</option>
+                            <option value="weak">weak</option></select><br>
+                        Writing Skills:<br>
+                        <input type="text" id="userWriting" name="userWriting"/>
+                    </td>
+                    <td>
+                        Enter Job 2 Details:<br>
+                        <textarea rows="5" cols="20" id="job2Desc" name="job2Desc"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        LinkedIn Account:<br>
+                        <input type="text" id="userLinked" name="userLinked"/><br>
+                        Portfolio Link:<br>
+                        <input type="text" id="userPortfolio" name="userPortfolio"/>
+                    </td>
+                    <td>
+                        Acquired Degree(s):<br>
+                        (',' separated)<br>
+                        <input type="text" id="userDegree" name="userDegree"/><br>
+                        Certification(s):<br>
+                        (',' separated)<br>
+                        <input type="text" id="userCerts" name="userCourses"/>
+                    </td>
+                    <td>
+                        Start:<br>
+                        <input type="date" id="startDate2" name="startDate2"/><br>
+                        End:<br>
+                        <input type="date" id="endDate2" name="endDate2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Social Media:<br>
+                        <input type="text" id="userSocial" name="userSocial"/>
+                    </td>
+                    <td>
+                        Educational Background:<br>
+                        <textarea rows="5" cols="20" id="userEdu" name="userEdu"></textarea>
+                    </td>
+                    <td>
+                        Enter Job 3 Details:<br>
+                        <textarea rows="5" cols="20" id="job3Desc" name="job3Desc"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="sendInfo" value="Create Resume" onclick="receiveResume()"/>
+                    </td>
+                    <td>
+                        Coding Languages:<br>
+                        (',' separated)<br>
+                        <input type="text" id="userCoding" name="userCoding"/><br>
+                        Preferred Language:<br>
+                        <input type="text" id="userBestLang" name="userBestLang"/>
+                    </td>
+                    <td>
+                        Start:<br>
+                        <input type="date" id="startDate3" name="startDate3"/><br>
+                        End:<br>
+                        <input type="date" id="endDate3" name="endDate3"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script src="projectJS.js"></script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Tristan Anderson
+    Date: September 8th, 2020
+    File: anderson-FtoC.html
+    Purpose: Practice the use of user input, mathematical expressions in javascript,
+            and to upload files via FTP
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tristan Anderson - Chapter 2 - Lab03</title>
+    </head>
+
+    <body>
+
+        <script>
+            var degFahr = parseFloat(prompt("Enter the degrees in Fahrenheit", 0));
+            var degCent = (degFahr - 32) * (5 / 9);
+            document.write("The temperature converted to celcius is: " + degCent + " \xB0Celcius");
+        </script>
+    </body>
+
+</html>
